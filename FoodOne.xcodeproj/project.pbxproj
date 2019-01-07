@@ -13,6 +13,13 @@
 		E407186821E332C600FB6BE1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E407186721E332C600FB6BE1 /* Assets.xcassets */; };
 		E407186B21E332C600FB6BE1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E407186921E332C600FB6BE1 /* LaunchScreen.storyboard */; };
 		E407187621E332C600FB6BE1 /* FoodOneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407187521E332C600FB6BE1 /* FoodOneTests.swift */; };
+		E407188121E334E800FB6BE1 /* Meal.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E407188021E334E800FB6BE1 /* Meal.storyboard */; };
+		E407188521E34FF300FB6BE1 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407188421E34FF300FB6BE1 /* SignUpVC.swift */; };
+		E407188721E3500300FB6BE1 /* MealListingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407188621E3500300FB6BE1 /* MealListingVC.swift */; };
+		E407188921E3501000FB6BE1 /* MealDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407188821E3501000FB6BE1 /* MealDetailVC.swift */; };
+		E407188B21E3502200FB6BE1 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407188A21E3502200FB6BE1 /* Meal.swift */; };
+		E407188D21E3505000FB6BE1 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407188C21E3505000FB6BE1 /* SignInVC.swift */; };
+		E407188F21E35CB500FB6BE1 /* MealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E407188E21E35CB500FB6BE1 /* MealCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,13 @@
 		E407187121E332C600FB6BE1 /* FoodOneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodOneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E407187521E332C600FB6BE1 /* FoodOneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodOneTests.swift; sourceTree = "<group>"; };
 		E407187721E332C600FB6BE1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E407188021E334E800FB6BE1 /* Meal.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Meal.storyboard; sourceTree = "<group>"; };
+		E407188421E34FF300FB6BE1 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		E407188621E3500300FB6BE1 /* MealListingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealListingVC.swift; sourceTree = "<group>"; };
+		E407188821E3501000FB6BE1 /* MealDetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailVC.swift; sourceTree = "<group>"; };
+		E407188A21E3502200FB6BE1 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		E407188C21E3505000FB6BE1 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
+		E407188E21E35CB500FB6BE1 /* MealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +97,13 @@
 				E407186721E332C600FB6BE1 /* Assets.xcassets */,
 				E407186921E332C600FB6BE1 /* LaunchScreen.storyboard */,
 				E407186C21E332C600FB6BE1 /* Info.plist */,
+				E407188021E334E800FB6BE1 /* Meal.storyboard */,
+				E407188C21E3505000FB6BE1 /* SignInVC.swift */,
+				E407188421E34FF300FB6BE1 /* SignUpVC.swift */,
+				E407188621E3500300FB6BE1 /* MealListingVC.swift */,
+				E407188821E3501000FB6BE1 /* MealDetailVC.swift */,
+				E407188A21E3502200FB6BE1 /* Meal.swift */,
+				E407188E21E35CB500FB6BE1 /* MealCell.swift */,
 			);
 			path = FoodOne;
 			sourceTree = "<group>";
@@ -178,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E407186B21E332C600FB6BE1 /* LaunchScreen.storyboard in Resources */,
+				E407188121E334E800FB6BE1 /* Meal.storyboard in Resources */,
 				E407186821E332C600FB6BE1 /* Assets.xcassets in Resources */,
 				E407186621E332C400FB6BE1 /* Main.storyboard in Resources */,
 			);
@@ -197,7 +219,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E407188F21E35CB500FB6BE1 /* MealCell.swift in Sources */,
+				E407188521E34FF300FB6BE1 /* SignUpVC.swift in Sources */,
 				E407186321E332C400FB6BE1 /* ViewController.swift in Sources */,
+				E407188B21E3502200FB6BE1 /* Meal.swift in Sources */,
+				E407188921E3501000FB6BE1 /* MealDetailVC.swift in Sources */,
+				E407188D21E3505000FB6BE1 /* SignInVC.swift in Sources */,
+				E407188721E3500300FB6BE1 /* MealListingVC.swift in Sources */,
 				E407186121E332C400FB6BE1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
