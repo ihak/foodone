@@ -30,7 +30,9 @@ class SignUpVC: UIViewController {
     
     @IBAction func signUpTapped(sender: UIButton) {
         if validate() {
-            self.performSegue(withIdentifier: "GoToMealListing", sender: nil)
+            if let vc = Storyboard.Meal.viewController(withIdentifier: "MealListingVC") {
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
         }
         else {
             let alert = UIAlertController(title: "Error", message: "Please provide name, email and password to sign up.", preferredStyle: .alert)

@@ -64,7 +64,6 @@
                     <connections>
                         <outlet property="email" destination="HXq-Sp-MHP" id="v3U-me-NYZ"/>
                         <outlet property="password" destination="kko-zc-GGr" id="ykp-SK-TFp"/>
-                        <segue destination="Prd-Ye-zPa" kind="show" identifier="GoToMealListing" id="XZi-Kq-c2B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -126,7 +125,6 @@
                         <outlet property="email" destination="gqJ-ne-2FW" id="Fa8-4r-fa9"/>
                         <outlet property="name" destination="8A2-X3-j9o" id="doa-9A-2nG"/>
                         <outlet property="password" destination="fD2-L9-f2b" id="YJ2-kR-iOR"/>
-                        <segue destination="Prd-Ye-zPa" kind="show" identifier="GoToMealListing" id="ReD-iM-wPr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KbL-d6-pI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -151,16 +149,5 @@
             </objects>
             <point key="canvasLocation" x="342" y="134"/>
         </scene>
-        <!--Meal-->
-        <scene sceneID="qhA-QN-dfD">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Meal" id="Prd-Ye-zPa" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="qAn-MM-klh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1450" y="533"/>
-        </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="XZi-Kq-c2B"/>
-    </inferredMetricsTieBreakers>
 </document>
