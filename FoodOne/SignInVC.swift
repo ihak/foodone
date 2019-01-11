@@ -13,6 +13,8 @@ class SignInVC: UIViewController {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     
+    static let storyboardName = "Main"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,7 +31,7 @@ class SignInVC: UIViewController {
     
     @IBAction func signInTapped(sender: UIButton) {
         if validate() {
-            if let vc = Storyboard.Meal.viewController(withIdentifier: "MealListingVC") {
+            if let vc = MealListingVC.instantiate() {
                 self.navigationController?.pushViewController(vc, animated: true)
             }
         }

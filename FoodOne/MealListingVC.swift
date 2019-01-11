@@ -10,7 +10,13 @@ import UIKit
 
 class MealListingVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
+    static let storyboardName = "Meal"
+
     var meals = [Meal]()
+    
+    static func instantiate() -> MealListingVC? {
+        return Storyboard.Meal.viewController(withIdentifier: "MealListingVC") as? MealListingVC
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
