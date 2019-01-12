@@ -13,8 +13,6 @@ class SignInVC: UIViewController {
     @IBOutlet weak var email: UITextField!
     @IBOutlet weak var password: UITextField!
     
-    static let storyboardName = "Main"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,6 +41,8 @@ class SignInVC: UIViewController {
         }
     }
     
+    // a stub for unwind segue to land on SignInVC
+    // when logged out.
     @IBAction func myUnwindAction(unwindSegue: UIStoryboardSegue) {
         //
     }

@@ -10,7 +10,6 @@ import UIKit
 
 class MealListingVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var tableView: UITableView!
-    static let storyboardName = "Meal"
 
     var meals = [Meal]()
     
@@ -30,20 +29,12 @@ class MealListingVC: UIViewController, UITableViewDataSource, UITableViewDelegat
         
         self.tableView.reloadData()
     }    
-
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? MealDetailVC {
-            if let meal = sender as? Meal {
-                vc.meal = meal
-            }
-        }
-    }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        self.performSegue(withIdentifier: "GoToMealDetail", sender: meals[indexPath.row])
+        if let vc = MealDetailVC.instantiate() {
+            vc.meal = meals[indexPath.row]
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

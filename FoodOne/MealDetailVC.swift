@@ -17,6 +17,10 @@ class MealDetailVC: UIViewController {
     
     var meal: Meal?
     
+    static func instantiate() -> MealDetailVC? {
+        return Storyboard.Meal.viewController(withIdentifier: "MealDetailVC") as? MealDetailVC
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
